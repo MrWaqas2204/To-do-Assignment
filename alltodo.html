@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="myFunction()">
+    
+
+    <nav class="bg-primary">
+        <ul class="nav-ul">
+            <li><a href="index.html">Create Todo</a></li>
+            <li><a href="alltodo.html">All Todo</a></li>
+            <li><a href="">My Day</a></li>
+        </ul>
+    </nav>
+
+    <p class="h3 text-center">All Todo's</p>
+
+    <div class="container">
+
+        <input type="text" id="data-id" class="form-control">
+
+        <input class="btn btn-primary" type="button" onclick="editable()"
+        value="Edit" id="col4" >
+
+        <input class="btn btn-success" type="button" onclick="disable()"
+        value="Done" id="col4" >
+
+        <input class="btn btn-danger" type="button" onclick="remove()"
+        value="Remove" id="col4" >
+
+    </div>
+
+    <div id="tmp">
+        <!--
+        <div class="row" id="row1">
+            
+            <input class="col col-id" type="text" id="cola" disabled>
+            <input class="col" type="text" id="col1" disabled>
+            <input class="col" type="text" id="col2" disabled>
+            <input class="col" type="text" id="col3" disabled>
+            
+        </div> 
+        -->
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
